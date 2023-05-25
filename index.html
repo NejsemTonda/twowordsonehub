@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Two word One hub </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <script src="script.js"></script>
+  <script>
+    chooseRandomLines();
+  </script>
+
+    <div style="z-index:-1">
+      <div id="right"></div>
+      <div id="left"></div>
+    </div>
+
+    <h1>Which word is more frequently used in porn titles?</h1>
+
+    <div id="word-panel">
+      <button id='leftButton'
+          onclick="choose(0)">left</button>
+      <button id='rightButton'
+          onclick="choose(1)">right</button>
+
+    </div>
+    <div id="choosed">
+      <div id="result1"></div>
+      <div id="result2"></div>
+    </div>
+
+    <button id="continue" onclick="restart()">skip</button>
+    <div id="select-container">
+    <span id="select-text">Minimum number of occurrences: </span>
+    <select id="min-oc">
+      <option value="50">50</option>
+      <option value="200">200</option>
+      <option value="500" selected>500</option>
+      <option value="1000">1000</option>
+    </select>
+  </div>
+
+</body>
+</html>
